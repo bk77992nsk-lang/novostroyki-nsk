@@ -4,156 +4,148 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Новостройки Новосибирска — бесплатный подбор квартиры</title>
-<meta name="description" content="Бесплатный подбор новостроек Новосибирска. Комиссии при покупке для клиента нет. Подбор квартиры под бюджет, район, количество комнат и ипотеку.">
-<meta name="theme-color" content="#111827">
+<meta name="description" content="Бесплатный подбор новостроек Новосибирска. Комиссии при покупке для клиента нет.">
 <style>
-:root{--bg:#f4f5f7;--card:#fff;--text:#15171a;--muted:#606873;--accent:#111827;--line:#e1e5e9}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
+:root{--bg:#f4f5f7;--card:#fff;--text:#15171a;--muted:#606873;--line:#e1e5e9}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
 .wrap{max-width:1000px;margin:auto;padding:18px}
 .hero{background:#111827;color:#fff;border-radius:26px;padding:50px 42px;margin:14px 0 20px}
 .badge{display:inline-block;background:#fff;color:#111827;font-weight:700;padding:8px 13px;border-radius:999px;margin-bottom:18px}
 .hero h1{font-size:clamp(36px,6vw,62px);line-height:1.02;margin:0 0 20px;max-width:850px}
-.hero p{font-size:20px;max-width:720px;color:#e5e7eb;margin-bottom:24px}
+.hero p{font-size:20px;max-width:720px;color:#e5e7eb}
 .btn{display:inline-block;background:#fff;color:#111827;text-decoration:none;font-weight:700;padding:15px 22px;border-radius:12px}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:20px 0}
 .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}
 .card h2{margin-top:0;font-size:27px}
-.card h3{margin-bottom:5px}
-.highlight{background:#fff;border:2px solid #111827;border-radius:20px;padding:25px;margin:20px 0;font-size:21px;font-weight:700}
+.highlight{background:#fff;border:2px solid #111827;border-radius:20px;padding:25px;margin:20px 0;font-size:21px}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.step{background:#f7f8fa;border-radius:14px;padding:18px}
-.step strong{display:block;font-size:25px;margin-bottom:8px}
+.step{background:#f7f8fa;border-radius:14px;padding:18px} .step strong{display:block;font-size:25px}
 .form{background:#fff;border-radius:22px;padding:30px;border:1px solid var(--line);margin:20px 0}
-label{display:block;font-weight:700;margin:15px 0 7px}
+.form-intro{color:var(--muted);margin-top:-8px}
+label{display:block;font-weight:700;margin:18px 0 8px}
+.required{color:#777;font-weight:400;font-size:13px}
 input,select,textarea{width:100%;padding:13px;border:1px solid #ccd1d7;border-radius:10px;font-size:16px;background:#fff}
-button{border:0;background:#111827;color:#fff;padding:15px 22px;border-radius:10px;font-size:17px;font-weight:700;margin-top:18px;cursor:pointer;width:100%}
-.contact{font-size:18px}
-.contact a{color:#111827;font-weight:700}
-.small{font-size:12px;color:var(--muted)}
-footer{padding:28px 0 50px;color:var(--muted);font-size:13px}
-@media(max-width:760px){
- .grid,.steps{grid-template-columns:1fr}
- .hero{padding:36px 23px}
- .wrap{padding:10px}
- .hero h1{font-size:40px}
-}
+.choice-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}
+.choice{position:relative} .choice input{position:absolute;opacity:0;pointer-events:none}
+.choice span{display:block;padding:12px 13px;border:1px solid #ccd1d7;border-radius:10px;background:#fff;cursor:pointer;font-weight:400}
+.choice input:checked+span{border:2px solid #111827;padding:11px 12px;background:#f1f3f5;font-weight:700}
+button{border:0;background:#111827;color:#fff;padding:16px 22px;border-radius:10px;font-size:17px;font-weight:700;margin-top:22px;cursor:pointer;width:100%}
+.contact{font-size:18px} .contact a{color:#111827;font-weight:700}
+.small{font-size:12px;color:var(--muted)} footer{padding:28px 0 50px;color:var(--muted);font-size:13px}
+@media(max-width:760px){.grid,.steps,.choice-grid{grid-template-columns:1fr}.hero{padding:36px 23px}.wrap{padding:10px}.hero h1{font-size:40px}}
 </style>
 </head>
-<body>
-<div class="wrap">
+<body><div class="wrap">
 
 <section class="hero">
-  <div class="badge">Бесплатный подбор · Без комиссии для покупателя</div>
-  <h1>Новостройки Новосибирска — подберу квартиру под ваш бюджет</h1>
-  <p>Помогу сравнить подходящие ЖК, планировки и условия покупки. Вам не нужно самостоятельно просматривать десятки предложений.</p>
-  <a class="btn" href="#form">Получить бесплатную подборку</a>
+<div class="badge">Бесплатный подбор · Без комиссии для покупателя</div>
+<h1>Новостройки Новосибирска — подберу квартиру под ваш бюджет</h1>
+<p>Ответьте на несколько вопросов — я отберу подходящие варианты и помогу сравнить ЖК, планировки и условия покупки.</p>
+<a class="btn" href="#form">Получить бесплатную подборку</a>
 </section>
 
-<section class="highlight">
-  <strong>Подбор платить не нужно.</strong><br>
-  Комиссии при покупке квартиры для клиента нет.
-</section>
+<section class="highlight"><strong>Подбор платить не нужно.</strong><br>Комиссии при покупке квартиры для клиента нет.</section>
 
 <section class="grid">
-  <div class="card">
-    <h2>Что подберу</h2>
-    <ul>
-      <li>студию, 1-, 2-, 3-комнатную квартиру</li>
-      <li>варианты для семьи</li>
-      <li>объекты под семейную ипотеку</li>
-      <li>квартиру в нужном районе</li>
-      <li>варианты в заданном бюджете</li>
-      <li>несколько ЖК для сравнения</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h2>Почему подбор, а не просто каталог?</h2>
-    <p>У каждой новостройки есть свои компромиссы: цена, район, планировка, срок сдачи, инфраструктура и условия покупки.</p>
-    <p>Моя задача — отобрать варианты под ваши условия и помочь сравнить их между собой.</p>
-  </div>
+<div class="card"><h2>Что подберу</h2><ul>
+<li>студию, 1-, 2-, 3-комнатную квартиру</li><li>варианты для семьи</li><li>объекты под семейную ипотеку</li>
+<li>квартиру в нужном районе</li><li>варианты в заданном бюджете</li><li>несколько ЖК для сравнения</li>
+</ul></div>
+<div class="card"><h2>Почему подбор, а не просто каталог?</h2>
+<p>У каждой новостройки есть свои компромиссы: цена, район, планировка, срок сдачи, инфраструктура и условия покупки.</p>
+<p>Моя задача — отобрать варианты под ваши условия и помочь сравнить их между собой.</p></div>
 </section>
 
-<section class="card">
-  <h2>Как это работает</h2>
-  <div class="steps">
-    <div class="step"><strong>1</strong>Вы оставляете заявку.</div>
-    <div class="step"><strong>2</strong>Я уточняю ваши требования.</div>
-    <div class="step"><strong>3</strong>Подбираю и сравниваю варианты.</div>
-    <div class="step"><strong>4</strong>Вы выбираете подходящий вариант.</div>
-  </div>
-</section>
+<section class="card"><h2>Как это работает</h2><div class="steps">
+<div class="step"><strong>1</strong>Вы оставляете заявку.</div>
+<div class="step"><strong>2</strong>Я уточняю ваши требования.</div>
+<div class="step"><strong>3</strong>Подбираю и сравниваю варианты.</div>
+<div class="step"><strong>4</strong>Вы выбираете подходящий вариант.</div>
+</div></section>
 
 <section class="form" id="form">
-  <h2>Получить бесплатную подборку</h2>
-  <p>Оставьте контакты — я свяжусь с вами и уточню параметры поиска.</p>
+<h2>Получить бесплатную подборку</h2>
+<p class="form-intro">Это займёт около минуты. Чем точнее ответы, тем точнее будет подборка.</p>
 
-  <form action="https://formsubmit.co/realtor@konstantinburdin.ru" method="POST">
-    <input type="hidden" name="_subject" value="Новый лид — бесплатный подбор новостройки">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://formsubmit.co/thankyou">
+<form action="https://formsubmit.co/realtor@konstantinburdin.ru" method="POST">
+<input type="hidden" name="_subject" value="Новый лид — бесплатный подбор новостройки">
 
-    <label for="name">Ваше имя</label>
-    <input id="name" name="name" required placeholder="Как к вам обращаться?">
+<label for="name">Ваше имя <span class="required">— обязательно</span></label>
+<input id="name" name="name" required placeholder="Как к вам обращаться?">
 
-    <label for="contact">Телефон или Telegram</label>
-    <input id="contact" name="contact" required placeholder="+7 ...">
+<label for="contact">Телефон или Telegram <span class="required">— обязательно</span></label>
+<input id="contact" name="contact" required placeholder="+7 ... или @username">
 
-    <label for="budget">Бюджет</label>
-    <select id="budget" name="budget">
-      <option>До 6 млн ₽</option>
-      <option>6–8 млн ₽</option>
-      <option>8–10 млн ₽</option>
-      <option>10–15 млн ₽</option>
-      <option>Более 15 млн ₽</option>
-    </select>
-
-    <label for="rooms">Количество комнат</label>
-    <select id="rooms" name="rooms">
-      <option>Студия</option>
-      <option>1 комната</option>
-      <option>2 комнаты</option>
-      <option>3 комнаты</option>
-      <option>4+ комнат</option>
-    </select>
-
-    <label for="area">Что важно учесть?</label>
-    <textarea id="area" name="comment" rows="4" placeholder="Район, площадь, срок сдачи, ипотека, этаж и т. д."></textarea>
-
-    <button type="submit">Получить бесплатную подборку</button>
-    <p class="small">Нажимая кнопку, вы соглашаетесь на обработку предоставленных данных для связи по вашему запросу.</p>
-  </form>
-</section>
-
-<section class="card">
-  <h2>Частые вопросы</h2>
-  <h3>Сколько стоит подбор?</h3>
-  <p><strong>Для клиента подбор бесплатный.</strong></p>
-
-  <h3>Есть ли комиссия при покупке?</h3>
-  <p><strong>Комиссии для клиента при покупке нет.</strong></p>
-
-  <h3>Можно ли подобрать квартиру по семейной ипотеке?</h3>
-  <p>Да, можно рассматривать объекты, соответствующие требованиям действующей программы. Конкретный объект и условия необходимо проверять индивидуально.</p>
-
-  <h3>Можно ли сравнить несколько ЖК?</h3>
-  <p>Да. Я могу подобрать несколько подходящих вариантов, чтобы их можно было сравнить по стоимости, расположению, планировке и другим параметрам.</p>
-</section>
-
-<section class="card contact">
-  <h2>Контакты</h2>
-  <p><strong>Константин — специалист по недвижимости</strong></p>
-  <p>Новосибирск и Новосибирская область</p>
-  <p>Телефон: <a href="tel:+79965568368">+7 996 556-83-68</a></p>
-  <p>Email: <a href="mailto:realtor@konstantinburdin.ru">realtor@konstantinburdin.ru</a></p>
-</section>
-
-<footer>
-  Стоимость, наличие квартир, акции, сроки сдачи и условия ипотечных программ могут изменяться.
-  Перед принятием решения актуальные параметры конкретного объекта необходимо проверить.
-</footer>
-
+<label>Что ищете?</label>
+<div class="choice-grid">
+<label class="choice"><input type="radio" name="rooms" value="Студия"><span>Студия</span></label>
+<label class="choice"><input type="radio" name="rooms" value="1-комнатная"><span>1-комнатная</span></label>
+<label class="choice"><input type="radio" name="rooms" value="2-комнатная"><span>2-комнатная</span></label>
+<label class="choice"><input type="radio" name="rooms" value="3-комнатная"><span>3-комнатная</span></label>
+<label class="choice"><input type="radio" name="rooms" value="4+ комнатная"><span>4+ комнатная</span></label>
+<label class="choice"><input type="radio" name="rooms" value="Не определился"><span>Не определился</span></label>
 </div>
-</body>
-</html>
+
+<label for="budget">Ваш бюджет</label>
+<select id="budget" name="budget"><option value="">Выберите вариант</option>
+<option>До 6 млн ₽</option><option>6–8 млн ₽</option><option>8–10 млн ₽</option>
+<option>10–12 млн ₽</option><option>12–15 млн ₽</option><option>15+ млн ₽</option><option>Пока не определился</option>
+</select>
+
+<label for="purchase">Как планируете покупать?</label>
+<select id="purchase" name="purchase_method"><option value="">Выберите вариант</option>
+<option>Семейная ипотека</option><option>Обычная ипотека</option><option>Есть собственные средства</option>
+<option>Продажа имеющейся квартиры</option><option>Пока не знаю</option>
+</select>
+
+<label for="sell">Есть ли квартира, которую планируете продать?</label>
+<select id="sell" name="existing_property"><option value="">Выберите вариант</option>
+<option>Да</option><option>Нет</option><option>Пока не решил</option>
+</select>
+
+<label>Что для вас важнее всего?</label>
+<div class="choice-grid">
+<label class="choice"><input type="checkbox" name="priority" value="Минимальная цена"><span>Минимальная цена</span></label>
+<label class="choice"><input type="checkbox" name="priority" value="Хороший район"><span>Хороший район</span></label>
+<label class="choice"><input type="checkbox" name="priority" value="Большая площадь"><span>Большая площадь</span></label>
+<label class="choice"><input type="checkbox" name="priority" value="Хорошая планировка"><span>Хорошая планировка</span></label>
+<label class="choice"><input type="checkbox" name="priority" value="Срок сдачи"><span>Срок сдачи</span></label>
+<label class="choice"><input type="checkbox" name="priority" value="Школа и детский сад"><span>Школа / детский сад</span></label>
+<label class="choice"><input type="checkbox" name="priority" value="Метро и транспорт"><span>Метро / транспорт</span></label>
+<label class="choice"><input type="checkbox" name="priority" value="Не определился"><span>Не определился</span></label>
+</div>
+
+<label for="when">Когда планируете покупку?</label>
+<select id="when" name="purchase_timing"><option value="">Выберите вариант</option>
+<option>В ближайший месяц</option><option>1–3 месяца</option><option>3–6 месяцев</option><option>Пока изучаю рынок</option>
+</select>
+
+<label for="district">Какой район интересует?</label>
+<input id="district" name="district" placeholder="Например: Октябрьский, Кировский, Заельцовский">
+
+<label for="comment">Что ещё важно учесть?</label>
+<textarea id="comment" name="comment" rows="4" placeholder="Площадь, этаж, срок сдачи, конкретный ЖК и другие пожелания"></textarea>
+
+<button type="submit">Получить бесплатную подборку</button>
+<p class="small">Подбор для клиента бесплатный. Комиссии при покупке для клиента нет. Нажимая кнопку, вы соглашаетесь на обработку предоставленных данных для связи по вашему запросу.</p>
+</form></section>
+
+<section class="card"><h2>Частые вопросы</h2>
+<h3>Сколько стоит подбор?</h3><p><strong>Для клиента подбор бесплатный.</strong></p>
+<h3>Есть ли комиссия при покупке?</h3><p><strong>Комиссии для клиента при покупке нет.</strong></p>
+<h3>Можно ли подобрать квартиру по семейной ипотеке?</h3>
+<p>Да, можно рассматривать объекты, соответствующие требованиям действующей программы. Конкретный объект и условия необходимо проверять индивидуально.</p>
+<h3>Можно ли сравнить несколько ЖК?</h3>
+<p>Да. Можно подобрать несколько подходящих вариантов и сравнить их по стоимости, расположению, планировке и другим параметрам.</p>
+</section>
+
+<section class="card contact"><h2>Контакты</h2>
+<p><strong>Константин — специалист по недвижимости</strong></p>
+<p>Новосибирск и Новосибирская область</p>
+<p>Телефон: <a href="tel:+79965568368">+7 996 556-83-68</a></p>
+<p>Email: <a href="mailto:realtor@konstantinburdin.ru">realtor@konstantinburdin.ru</a></p>
+</section>
+
+<footer>Стоимость, наличие квартир, акции, сроки сдачи и условия ипотечных программ могут изменяться. Перед принятием решения актуальные параметры конкретного объекта необходимо проверить.</footer>
+</div></body></html>
